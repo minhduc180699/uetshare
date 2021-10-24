@@ -1,0 +1,24 @@
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 8a87f37a91c563e07b46
+            clientSecret: 395ce38260f8631af3cee991830fce77b3c85083
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/uet
+    username: uet
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+server:
+  port: 8888
