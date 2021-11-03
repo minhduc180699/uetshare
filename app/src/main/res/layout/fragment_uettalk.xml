@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.uettalk.UETTalkFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Viết Preview mới"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageButton
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/btn_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_menu_camera"/>
+            </RelativeLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Viết vài từ vào đây nào"
+                android:defaultFocusHighlightEnabled="false"
+                android:gravity="top"
+                android:padding="10dp"
+                android:id="@+id/edttxt_write_uettalk"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đăng"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/btn_dang_uettalk"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerview_item_uettalk"/>
+        </LinearLayout>
+
+
+</LinearLayout>
